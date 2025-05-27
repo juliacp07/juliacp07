@@ -1,0 +1,95 @@
+#include <stdio.h>
+
+int main() {
+    int embalagem, calda, complemento, fruta;
+
+    printf("=== Bem-Vindo a Acaiteria JULIMA ===\n");
+
+    // Escolha da embalagem
+    printf("\nEscolha o tipo de embalagem:\n");
+    printf("1 - Taça\n");
+    printf("2 - Barca\n");
+    printf("3 - Copo 200 ml\n");
+    printf("4 - Copo 300 ml\n");
+    printf("5 - Copo 500 ml\n");
+    printf("Opção: ");
+    scanf("%d", &embalagem);
+
+    switch (embalagem) {
+        case 1: printf("Você escolheu: Taça\n"); break;
+        case 2: printf("Você escolheu: Barca\n"); break;
+        case 3: printf("Você escolheu: Copo de 200 ml\n"); break;
+        case 4: printf("Você escolheu: Copo de 300 ml\n"); break;
+        case 5: printf("Você escolheu: Copo de 500 ml\n"); break;
+        default:
+            printf("Opção inválida.\n");
+            return 1;
+    }
+
+    // Escolha da calda
+    printf("\nEscolha o tipo de calda:\n");
+    printf("1 - Morango\n");
+    printf("2 - Caramelo\n");
+    printf("3 - Chocolate\n");
+    printf("4 - Amora\n");
+    printf("5 - Frutas Vermelhas\n");
+    printf("Opção: ");
+    scanf("%d", &calda);
+
+    switch (calda) {
+        case 1: printf("Você escolheu: Morango\n"); break;
+        case 2: printf("Você escolheu: Caramelo\n"); break;
+        case 3: printf("Você escolheu: Chocolate\n"); break;
+        case 4: printf("Você escolheu: Amora\n"); break;
+        case 5: printf("Você escolheu: Frutas Vermelhas\n"); break;
+        default:
+            printf("Opção inválida.\n");
+            return 1;
+    }
+
+    // Escolha do complemento
+    printf("\nEscolha o tipo do complemento:\n");
+    printf("1 - Morango\n");
+    printf("2 - M&Ms\n");
+    printf("3 - Leite Ninho\n");
+    printf("4 - Nutella\n");
+    printf("5 - Amendoim\n");
+    printf("Opção: ");
+    scanf("%d", &complemento);
+
+    switch (complemento) {
+        case 1: printf("Você escolheu: Morango\n"); break;
+        case 2: printf("Você escolheu: M&Ms\n"); break;
+        case 3: printf("Você escolheu: Leite Ninho\n"); break;
+        case 4: printf("Você escolheu: Nutella\n"); break;
+        case 5: printf("Você escolheu: Amendoim\n"); break;
+        default:
+            printf("Opção inválida.\n");
+            return 1;
+    }
+
+    // Escolha da fruta
+    printf("\nEscolha o tipo da fruta:\n");
+    printf("1 - Morango\n");
+    printf("2 - Manga\n");
+    printf("3 - Banana\n");
+    printf("4 - Kiwi\n");
+    printf("5 - Uva\n");
+    printf("Opção: ");
+    scanf("%d", &fruta);
+
+    switch (fruta) {
+        case 1: printf("Você escolheu: Morango\n"); break;
+        case 2: printf("Você escolheu: Manga\n"); break;
+        case 3: printf("Você escolheu: Banana\n"); break;
+        case 4: printf("Você escolheu: Kiwi\n"); break;
+        case 5: printf("Você escolheu: Uva\n"); break;
+        default:
+            printf("Opção inválida.\n");
+            return 1;
+    }
+
+    printf("\nPedido finalizado. Obrigado por escolher a Acaiteria JULIMA!\n");
+
+    return 0;
+}
